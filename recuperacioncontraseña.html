@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RECUPERACION CONTRASEÑA</title>
+    <link rel="stylesheet" href="css/iniciosesion.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-form">
+            <img src="https://virtualaula.comfenalco.com.co/colegioibague/moodle/pluginfile.php?file=%2F1%2Ftheme_enlightlite%2Flogo%2F1724250521%2FLOGO-COLEGIO-01.png" alt="Logo Colegio" class="login-logo">
+            <div class="login-container">
+                <div class="login-form">
+                    <h2>Recuperacion Contraseña</h2>
+                    <form id="loginForm" action="recuperacioncontraseña.php" method="post">
+                        <div class="form-grupo">
+                            <label for="nombre">Nombre de usuario:</label>
+                            <input type="text" id="nombre" name="nombre" required>
+                        </div>
+                        <div class="form-grupo">
+                            <label for="password">Nueva contraseña:</label>
+                            <div class="password-container">
+                                <input type="password" id="password" name="password" required>
+                                <span class="toggle-password" onclick="togglePassword()">
+                                    👁️
+                                </span>
+                            </div>
+                        </div>
+                        
+                        <!-- Botón de Enviar -->
+                        <button type="submit">Acceder</button>
+                        <br>
+            
+                        <!-- Enlace de "Olvidé mi contraseña" -->
+                        <div class="forgot-password">
+                            <a href="iniciosesion.html">Inicio Sesion</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            
+            
+            
+            <script src="js/ojo.js"></script> <!-- JavaScript para el ícono del ojo -->
+            
+        </div>
+    </div>
+
+</body>
+</html>
